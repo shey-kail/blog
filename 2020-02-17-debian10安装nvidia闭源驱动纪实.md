@@ -1,8 +1,3 @@
----
-layout: mypost
-title: debian10安装nvidia闭源驱动和bumblebee纪实
-categories: [linux, nvidia]
----
 
 > 前言
 

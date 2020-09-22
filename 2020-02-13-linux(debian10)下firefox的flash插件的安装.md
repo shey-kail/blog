@@ -1,8 +1,3 @@
----
-layout: mypost
-title: linux(debian10)下firefox的flash插件的安装
-categories: [linux, flash, firefox]
----
 
 > 前言
 
