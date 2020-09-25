@@ -22,7 +22,7 @@ apt install nvidia-settings
 apt install bumblebee-nvidia primus libgl1-nvidia-glx
 ```  
 &emsp;&emsp;***安装的过程中如果蹦出来什么nvidia-installer-cleanup这个东西，让你yes or no，一定要选no！！！具体yes还是allow什么的我忘了，图也忘了截，以后有机会补上吧***  
-&emsp;&emsp;<small><small><small>注意：这是bullseye（也就是debian11）版本之前的版本才可以使用这个，因为在bullseye版本中libgl1-nvidia-glx这个包不存在了，所以使用：```apt install bumblebee-nvidia primus libgl1-nvidia-tesla-glx```来代为安装</small></small></small>
+&emsp;&emsp;***注意：这是bullseye（也就是debian11）版本之前的版本才可以使用这个，因为在bullseye版本中libgl1-nvidia-glx这个包不存在了，所以使用：```apt install bumblebee-nvidia primus libgl1-nvidia-tesla-glx```来代为安装***
 
 > 第三坑 and 第三步：将用户添加到组
 
@@ -33,7 +33,7 @@ apt install bumblebee-nvidia primus libgl1-nvidia-glx
 
 &emsp;&emsp;这是最大的一个坑，理论上，你确实安装好了，但是！不妨试试你安装的成果吧！glxgears是nvidia自带的一款测试软件，先```glxgears```测试一下：
 
-![1.png](1.png) 
+![1.png](../img/2020-02-17/1.png) 
 
 这是用集成显卡测试的结果，再```optirun glxgears```如果FPS也差不多在这个范围，那么恭喜你你在此坑内，解决办法其实很简单：安装VirtualGL。遗憾的是，debian的源并没有相关的软件包，所以需要现下载，特此提供链接，[点我下载](https://sourceforge.net/projects/virtualgl/files/)，我了amd64的64位的版本和32位的版本，然后  
 ```dpkg -i software_package.deb```  
