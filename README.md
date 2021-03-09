@@ -9,3 +9,4 @@
 [生信基础知识](./post/2020-09-20-生信基础知识.md)  
 [群体遗传学笔记](./post/2020-09-21-群体遗传学笔记.md)  
 [new idea](./post/2020-09-25-new_idea.md)  
+[methylKit入门使用](./post/2021-03-08-methylKit入门使用.md)
