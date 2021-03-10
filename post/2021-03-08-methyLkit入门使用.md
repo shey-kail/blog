@@ -71,13 +71,13 @@ id = list(
 		)
 
 
-myobj = processBismarkAln(
+myobj = processBismarkAln(        //这个函数也能生成上面所述的文本文件
 		location = file.list,
 		sample_id = id,
 		assembly = "hg19",         //这个参数是描述基因组的一个字符串，可以是任何值
 		treatment = c(1,1,0,0),    //在这里，1代表实验组，0代表对照组
 		context="CpG",
-		save.folder = getwd()      //暂时不清楚为啥加这东西
+		save.folder = getwd()      //这个参数的意思是，把生成的文本文件保存到何目录下
 		)
 ```
 #### 合并所有情况，得到所有样本的甲基化表达谱
@@ -99,13 +99,13 @@ all = getMethylDiff(
 		myDiff,
 		difference = 25,  //这个东西是差异阈值，只有差异大于阈值时，才会保留
 		qvalue = 0.01,    //q值，小于它时才保留
-		type="all"        //这个参数的取值范围为all,hypomethylated,hypermethylated，用于告诉R你想要显示那部分的结果
+		type="all"        //这个参数的取值范围为"all","hypo","hyper"，用于告诉R你想要显示那部分的结果
 		)
 ```
 #### 差异甲基化区域的分析
 在methylKit中，它的差异分析总是针对合并后的甲基化表达谱，如果你的甲基化表达谱每一行是一个甲基化位点，那么差异分析的结果就是差异甲基化位点；如果你的表达谱每一行是一个甲基化区域，那么差异分析的结果就是差异甲基化区域。上面的例子都是针对差异甲基化位点的，下面看下差异甲基化区域的分析。
 
-首先遇到的问题就是甲基化区域如何界定，在methylKit中，按照滑动窗口的方式定义甲基化区域，默认窗口大小为10000 bp ，步长为1000bp,通过**tileMethylCounts**函数实现。
+首先遇到的问题就是甲基化区域如何界定，在methylKit中，按照滑动窗口的方式定义甲基化区域，默认窗口大小为1000bp ，步长为1000bp,通过**tileMethylCounts**函数实现。
 
 完整的差异甲基化区域分析的代码如下：
 ```
