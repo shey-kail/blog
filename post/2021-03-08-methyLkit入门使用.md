@@ -99,7 +99,7 @@ all = getMethylDiff(
 		myDiff,
 		difference = 25,  //这个东西是差异阈值，只有差异大于阈值时，才会保留
 		qvalue = 0.01,    //q值，小于它时才保留
-		type="all"        //这个参数的取值范围为all,hypomethylated,hypermethylated，用于告诉R�想要显示那部分的结果
+		type="all"        //这个参数的取值范围为all,hypomethylated,hypermethylated，用于告诉R你想要显示那部分的结果
 		)
 ```
 #### 差异甲基化区域的分析
