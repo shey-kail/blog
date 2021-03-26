@@ -9,5 +9,6 @@
 * [生信基础知识](./post/2020-09-20-生信基础知识.md)  
 * [群体遗传学笔记](./post/2020-09-21-群体遗传学笔记.md)  
 * [new idea](./post/2020-09-25-new_idea.md)  
-* [methylKit入门使用](./post/2021-03-08-methyLkit入门使用.md)
-* [methylKit进阶使用](./post/2021-03-10-methyLkit进阶使用.md)
+* [methyLkit入门使用](./post/2021-03-08-methyLkit入门使用.md)
+* [methyLkit进阶使用](./post/2021-03-10-methyLkit进阶使用.md)
+* [DMC和DMR](./post/2021-03-22-DMC和DMR.md)

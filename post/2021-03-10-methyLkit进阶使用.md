@@ -92,8 +92,8 @@ myobj=methRead(file.list=list("test1.txt","test2.txt","ctrl1.txt","ctrl2.txt"),
            )
 
 ### reorganize重新提取样本信息
-myobj2=reorganize(myobj,sample.idc=c("test1","ctrl2"),treatment=c(1,0))
-myobj3=reorganize(myobj,sample.idc=c("test2","ctrl1"),treatment=c(1,0))
+myobj2=reorganize(myobj,sample.ids=c("test1","ctrl2"),treatment=c(1,0))
+myobj3=reorganize(myobj,sample.ids=c("test2","ctrl1"),treatment=c(1,0))
 
 meth=unite(myobj2, destrand=FALSE)
 myDiff=calculateDiffMeth(meth)

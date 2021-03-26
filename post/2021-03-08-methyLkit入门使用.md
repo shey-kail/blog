@@ -44,7 +44,7 @@ id = list(
 
 myobj = methRead(
 		location = file.list,
-		sample_id = id,
+		sample.id = id,
 		assembly = "hg19",         //这个参数是描述基因组的一个字符串，可以是任何值
 		treatment = c(1,1,0,0),    //在这里，1代表实验组，0代表对照组
 		context="CpG"
@@ -73,10 +73,10 @@ id = list(
 
 myobj = processBismarkAln(        //这个函数也能生成上面所述的文本文件
 		location = file.list,
-		sample_id = id,
+		sample.id = id,
 		assembly = "hg19",         //这个参数是描述基因组的一个字符串，可以是任何值
 		treatment = c(1,1,0,0),    //在这里，1代表实验组，0代表对照组
-		context="CpG",
+		save.context="CpG",
 		save.folder = getwd()      //这个参数的意思是，把生成的文本文件保存到何目录下
 		)
 ```
